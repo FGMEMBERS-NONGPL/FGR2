@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<!-- Wing-mounted 370 gallon drop tank, by Dave Culp -->
+
+<PropertyList>
+
+ <path>tank.ac</path>
+
+ <animation>
+  <type>select</type>
+  <object-name>all</object-name>
+  <condition>
+   <not>
+     <property>fdm/jsbsim/systems/armament/station5/released</property>
+   </not>
+  </condition>
+ </animation>  
+
+
+</PropertyList>

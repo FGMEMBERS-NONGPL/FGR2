@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<!-- Centerline 600 gallon drop tank, by Dave Culp -->
+
+<PropertyList>
+
+ <path>tank.ac</path>
+
+ <animation>
+  <type>select</type>
+  <object-name>all</object-name>
+  <condition>
+   <not>
+     <property>fdm/jsbsim/systems/armament/release</property>
+   </not>
+  </condition>
+ </animation>  
+
+
+</PropertyList>

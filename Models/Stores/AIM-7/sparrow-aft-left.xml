@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<!-- AIM-7E Sparrow III, by Dave Culp -->
+
+<PropertyList>
+
+ <path>sparrow.ac</path>
+ <offsets>
+    <pitch-deg>2.5</pitch-deg>
+ </offsets>
+
+</PropertyList>
