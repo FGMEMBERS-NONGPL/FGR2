@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim>
+    <model>
+      <livery>
+        <name type="string">Royal Navy Fleet Air Arm, 767 Sqdn.</name>
+     <texture-fuselage>Liveries/RN-1/01FGR2-rn1.jpg</texture-fuselage>
+     <texture-nose>Liveries/RN-1/03FGR2-rn1.jpg</texture-nose>
+	 <texture-belly>Liveries/common/02FGR2common.jpg</texture-belly>
+	 <texture-fuselagerear>Liveries/RN-1/04FGR2-rn1.jpg</texture-fuselagerear>
+     <texture-luwings>Liveries/RN-1/05FGR2-rn1.jpg</texture-luwings>
+	 <texture-llwings>Liveries/RN-1/06FGR2-rn1.jpg</texture-llwings>
+	 <texture-ruwings>Liveries/RN-1/07FGR2-rn1.jpg</texture-ruwings>
+     <texture-rlwings>Liveries/RN-1/08FGR2-rn1.jpg</texture-rlwings>
+	 <texture-tail>Liveries/RN-1/09FGR2-rn1.jpg</texture-tail>
+
+   <specular>
+              <red>   0.3 </red>
+              <green> 0.3 </green>
+              <blue>  0.3 </blue>
+            </specular>
+
+            <emission>
+              <red>   0.2 </red>
+              <green> 0.2 </green>
+              <blue>  0.2 </blue>
+            </emission>
+
+      </livery>
+    </model>
+  </sim>
+
+</PropertyList>

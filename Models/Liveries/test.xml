@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim>
+    <model>
+      <livery>
+        <name type="string">Test</name>
+     <texture-fuselage>Liveries/01FGR2t.jpg</texture-fuselage>
+     <texture-nose>Liveries/03FGR2t.jpg</texture-nose>
+	 <texture-belly>Liveries/02FGR2t.jpg</texture-belly>
+	 <texture-fuselagerear>Liveries/04FGR2t.jpg</texture-fuselagerear>
+     <texture-luwings>Liveries/05FGR2t.jpg</texture-luwings>
+	 <texture-llwings>Liveries/06FGR2t.jpg</texture-llwings>
+	 <texture-ruwings>Liveries/07FGR2t.jpg</texture-ruwings>
+     <texture-rlwings>Liveries/08FGR2t.jpg</texture-rlwings>
+	 <texture-tail>Liveries/09FGR2t.jpg</texture-tail>
+
+   <specular>
+              <red>   0.3 </red>
+              <green> 0.3 </green>
+              <blue>  0.3 </blue>
+            </specular>
+
+            <emission>
+              <red>   0.2 </red>
+              <green> 0.2 </green>
+              <blue>  0.2 </blue>
+            </emission>
+
+      </livery>
+    </model>
+  </sim>
+
+</PropertyList>

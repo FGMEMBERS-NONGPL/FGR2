@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <default>
+    <menu n="100">
+      <label>FGR2</label>
+      <enabled type="bool">true</enabled>
+      <item>
+        <label>Select Livery</label>
+        <binding>
+          <command>nasal</command>
+          <script>aircraft.livery.dialog.toggle()</script>
+        </binding>
+      </item>
+ <item n="3">
+        <label>No load</label>
+        <binding>
+          <command>nasal</command>
+          <script>load.Clean()</script>
+        </binding>
+      </item>
+
+<item n="4">
+        <label>Ferry Load</label>
+        <binding>
+          <command>nasal</command>
+          <script>load.Ferry()</script>
+        </binding>
+      </item>	
+
+<item n="5">
+        <label>QRA</label>
+        <binding>
+          <command>nasal</command>
+          <script>load.QRA()</script>
+        </binding>
+      </item>
+
+<item n="6">
+        <label>CAP.</label>
+        <binding>
+          <command>nasal</command>
+          <script>load.CAP()</script>
+        </binding>
+      </item>	
+
+<item n="7">
+        <label>Bomb run.</label>
+        <binding>
+          <command>nasal</command>
+          <script>load.bombrun()</script>
+        </binding>
+      </item>
+
+<item n="8">
+        <label>Heavy Bomb run.</label>
+        <binding>
+          <command>nasal</command>
+          <script>load.bombrunheavy()</script>
+        </binding>
+      </item>
+
+<item n="9">
+        <label>Bomb run, long range.</label>
+        <binding>
+          <command>nasal</command>
+          <script>load.bombrunlong()</script>
+        </binding>
+      </item>
+
+<item n="10">
+        <label>Ground attack.</label>
+        <binding>
+          <command>nasal</command>
+          <script>load.GA()</script>
+        </binding>
+      </item>	  
+	  
+<item n="11">
+        <label>Ground attack, extended range.</label>
+        <binding>
+          <command>nasal</command>
+          <script>load.GAextended()</script>
+        </binding>
+      </item>		  
+    </menu>
+  </default>
+
+</PropertyList>
+

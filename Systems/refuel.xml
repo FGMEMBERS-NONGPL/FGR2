@@ -28,6 +28,7 @@
           <test logic="AND" value="1">
                 systems/refuel/probe-pos-norm gt 0.99
                 systems/refuel/armed == 1
+                systems/refuel/contact == 1
           </test>
           <output>propulsion/refuel</output>
      </switch>

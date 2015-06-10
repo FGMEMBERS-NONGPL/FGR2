@@ -1,3 +1,29 @@
+FGUK's McDonnell-Douglas/BAC FGR2 Phantom II
+---------------------------------------------
+
+This aircraft requires the DAVE PACK, available <a href="http://fguk.eu/index.php/hangar/viewdownload/11-other-objects-and-vehicles/170-davepackupdate">HERE</a>.
+
+Release notes:
+---------------
+
+V0.8
+-----
+
+Changes to Both versions:-
+
+* Advanced lighting kit fitted
+* MP Afterburner effect
+* Updated sound files.
+* Changes to YASIM vesion:-
+* YASIM File updated to use YASIM CURRENT VERSION for FG 3.2+.
+* Pre selected load out options are available from the FGR2 menu.
+* Added MP Back sear ( WSO ) - passenger mode only at the moment.
+* Fixed some animation issues.
+* Front Canopy animated.
+* Help file updated - please read it.
+
+***
+
 NOTE:
 
 License:  Creative Commons, CC-BY-NC-SA

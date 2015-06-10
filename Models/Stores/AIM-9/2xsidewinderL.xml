@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<!-- AIM-9D Sidewinder, by Dave Culp -->
+
+
+
+<PropertyList>
+<path>left-rail.ac</path>
+ <!-- AIM-9, left side - left -->
+ <model>
+ <name>AIM9-L-L</name>
+  <path>Aircraft/FGR2/Models/Stores/AIM-9/sidewinder.xml</path>
+  <offsets>
+   <x-m>-1.67</x-m>
+   <y-m>-2.38</y-m>
+   <z-m>-0.44</z-m>
+   <pitch-deg>-2</pitch-deg>
+  </offsets>
+ </model>
+
+ <!-- AIM-9, left side - right -->
+ <model>
+ <name>AIM9-L-R</name>
+  <path>Aircraft/FGR2/Models/Stores/AIM-9/sidewinder.xml</path>
+  <offsets>
+   <x-m>-1.67</x-m>
+   <y-m>-1.92</y-m>
+   <z-m>-0.44</z-m>
+   <pitch-deg>-2</pitch-deg>
+  </offsets>
+ </model>
+
+</PropertyList>

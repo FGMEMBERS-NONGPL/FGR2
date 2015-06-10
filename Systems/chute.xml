@@ -6,8 +6,25 @@
 
   <channel name="Chute">
 
+   <switch name="systems/chute/speed-limiter">
+        <default value="/controls/flight/chute_jettisoned"/>
+          <test value="1">
+                systems/chute/deploy == 1
+                velocities/ve-kts gt 200.0
+          </test>
+       <output>/controls/flight/chute_jettisoned</output>
+   </switch>
+
+   <switch name="systems/chute/copy">
+        <default value="systems/chute/deploy"/>
+          <test value="0">
+                /controls/flight/chute_jettisoned == 1
+          </test>
+       <output>/sim/multiplay/generic/int[6]</output>
+   </switch>
+
    <kinematic name="Parachute Deploy">
-     <input>systems/chute/deploy</input>
+     <input>/sim/multiplay/generic/int[6]</input>
      <traverse>
        <setting>
           <position> 0 </position>
@@ -20,6 +37,14 @@
      </traverse>
      <output>systems/chute/unfurl-norm</output>
    </kinematic>
+
+   <switch name="systems/chute/MP-unfurl">
+        <default value="0"/>
+          <test value="systems/chute/unfurl-norm">
+                /sim/multiplay/generic/int[6] == 1
+          </test>
+       <output>/sim/multiplay/generic/float[6]</output>
+   </switch>
 
   </channel>
 

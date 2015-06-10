@@ -83,24 +83,24 @@
           <z>  -30 </z>
       </location>
    </pointmass>
-   <pointmass name="station2"><!-- three MK-82 bombs -->
-      <weight unit="LBS"> 1560 </weight>
+   <pointmass name="station2"><!-- two AIM-9 missiles -->
+      <weight unit="LBS"> 320 </weight>
       <location name="POINTMASS" unit="IN">
           <x>   -6 </x>
           <y>  -83 </y>
           <z>  -20 </z>
       </location>
    </pointmass>
-   <pointmass name="station3"><!-- unused -->
-      <weight unit="LBS"> 0 </weight>
+   <pointmass name="station3"><!-- gun pod -->
+      <weight unit="LBS"> 1739 </weight>
       <location name="POINTMASS" unit="IN">
           <x>    0 </x>
           <y>    0 </y>
           <z>  -20 </z>
       </location>
    </pointmass>
-   <pointmass name="station4"><!-- three MK-82 bombs -->
-      <weight unit="LBS"> 1560 </weight>
+   <pointmass name="station4"><!-- two AIM-9 missiles -->
+      <weight unit="LBS"> 320 </weight>
       <location name="POINTMASS" unit="IN">
           <x>   -6 </x>
           <y>   83 </y>
@@ -228,7 +228,6 @@
     <feed>0</feed>
     <feed>1</feed>
     <feed>2</feed>
-    <feed>3</feed>
     <thruster file="direct">
      <location unit="IN">
        <x> 190 </x>
@@ -252,7 +251,6 @@
     <feed>0</feed>
     <feed>1</feed>
     <feed>2</feed>
-    <feed>3</feed>
     <thruster file="direct">
      <location unit="IN">
        <x> 190 </x>
@@ -275,12 +273,13 @@
        <z> -6.0 </z>
      </location>
      <priority>2</priority>
+     <type>F-40</type>
      <capacity unit="LBS"> 13160.00 </capacity>
      <contents unit="LBS"> 13000.00 </contents>
      <standpipe unit="LBS"> 2000.00 </standpipe>
   </tank>
 
-  <!-- Centerline 600 gallon drop tank -->
+  <!-- Centerline 600 gallon drop tank 
   <tank type="FUEL" number="1">
      <location unit="IN">
        <x>     0 </x>
@@ -290,25 +289,30 @@
      <capacity unit="LBS"> 3950.00 </capacity>
      <contents unit="LBS">    0 </contents>
   </tank>
+  -->
 
   <!-- Left 370 gallon drop tank -->
-  <tank type="FUEL" number="2">
+  <tank type="FUEL">
      <location unit="IN">
        <x>      0 </x>
        <y> -139.0 </y>
        <z>  -30.0 </z>
      </location>
+     <priority>1</priority>
+     <type>F-40</type>
      <capacity unit="LBS"> 2440.00 </capacity>
      <contents unit="LBS"> 2200.00 </contents>
   </tank>
 
   <!-- Right 370 gallon drop tank -->
-  <tank type="FUEL" number="3">
+  <tank type="FUEL">
      <location unit="IN">
        <x>      0 </x>
        <y>  139.0 </y>
        <z>  -30.0 </z>
      </location>
+     <priority>1</priority>
+     <type>F-40</type>
      <capacity unit="LBS"> 2440.00 </capacity>
      <contents unit="LBS"> 2200.00 </contents>
   </tank>
@@ -340,8 +344,7 @@
  <system file="ab_workaround"/>
 
 
- <flight_control name="FCS">
- </flight_control>
+ <flight_control name="FCS"/>
 
 
  <aerodynamics>
@@ -733,7 +736,7 @@
 
   </axis>
 
-    <function name="aero/qSbw">
+    <function name="aero/qSbwy">
        <description>Yaw_moment_dimensionalizer</description>
        <product>
            <property>aero/qbar-area</property>
@@ -741,10 +744,10 @@
        </product>
     </function>
 
-    <function name="aero/qSbwr">
+    <function name="aero/qSbwry">
        <description>Yaw_moment_yaw_rate_dimensionalizer</description>
        <product>
-           <property>aero/qSbw</property>
+           <property>aero/qSbwy</property>
            <property>aero/bi2vel</property>
            <property>velocities/r-aero-rad_sec</property>
        </product>
@@ -790,11 +793,11 @@
              <property>aero/coefficient/Cndr</property>
              <property>aero/coefficient/Cnda</property>
            </sum>
-           <property>aero/qSbw</property>
+           <property>aero/qSbwy</property>
          </product>
          <product>
             <property>aero/coefficient/Cnr</property>
-            <property>aero/qSbwr</property>
+            <property>aero/qSbwry</property>
          </product>
        </sum>
     </function>

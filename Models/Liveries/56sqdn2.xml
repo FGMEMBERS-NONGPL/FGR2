@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim>
+    <model>
+      <livery>
+        <name type="string">RAF 56 Sqdn., "Red Tail"</name>
+     <texture-fuselage>Liveries/56S-2/01FGR2-56n2.jpg</texture-fuselage>
+     <texture-nose>Liveries/56S-2/03FGR2-56n2.jpg</texture-nose>
+	 <texture-belly>Liveries/common/02FGR2common.jpg</texture-belly>
+	 <texture-fuselagerear>Liveries/common/04FGR2common.jpg</texture-fuselagerear>
+     <texture-luwings>Liveries/common/05FGR2commongreyLV.jpg</texture-luwings>
+	 <texture-llwings>Liveries/common/06FGR2commonLV.jpg</texture-llwings>
+	 <texture-ruwings>Liveries/common/07FGR2commongreyLV.jpg</texture-ruwings>
+     <texture-rlwings>Liveries/common/08FGR2commonLV.jpg</texture-rlwings>
+	 <texture-tail>Liveries/56S-2/09FGR2-56n2.jpg</texture-tail>
+
+   <specular>
+              <red>   0.3 </red>
+              <green> 0.3 </green>
+              <blue>  0.3 </blue>
+            </specular>
+
+            <emission>
+              <red>   0.2 </red>
+              <green> 0.2 </green>
+              <blue>  0.2 </blue>
+            </emission>
+
+      </livery>
+    </model>
+  </sim>
+
+</PropertyList>
